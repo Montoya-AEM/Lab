@@ -1,0 +1,109 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+
+}
+
+.article-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.article-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar{
+    display: flexbox;
+    flex-direction: column;
+    gap: 10px;
+}
+.advertisement{
+    background-image: url(https://www.americanhumane.org/app/uploads/2016/08/animals-cats-cute-45170-min.jpg);
+    background-size: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* creates a responsive grid */
+    gap: 20px;
+    padding: 20px;
+}
+.photo img{
+    width: 100%;/* ensures images are responsive */
+    height: auto;/* maintain aspect ration */
+}
+.gallery-controls{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.hamburger{
+    display:none;
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+    }
+    nav ul.active{
+        display: flex;
+    }
+}
+
+
+
